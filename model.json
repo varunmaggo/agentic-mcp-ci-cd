@@ -1,0 +1,14 @@
+{
+  "services": {
+    "api": {
+      "dockerfile": "./services/api/Dockerfile",
+      "baseImage": "python:3.10",
+      "env": ["FLASK_ENV=prod"]
+    }
+  },
+  "rules": {
+    "dockerfile": {
+      "mustContain": ["EXPOSE", "CMD"]
+    }
+  }
+}
